@@ -38,7 +38,7 @@ echo "Creating DynamoDB Table $DDB_TABLE begin..."
 aws dynamodb create-table --table-name $DDB_TABLE \
     --attribute-definitions AttributeName=email,AttributeType=S \
     --key-schema AttributeName=email,KeyType=HASH \
-    --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5 \
+    --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
 		--region $REGION
 echo "Creating DynamoDB Table $DDB_TABLE end (creation still in progress)"
 

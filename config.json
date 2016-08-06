@@ -1,14 +1,15 @@
 {
-  "AWS_ACCOUNT_ID": "123412341234",
+  "AWS_ACCOUNT_ID": "373262334163",
   "CLI_PROFILE": "default",
-  "REGION": "eu-west-1",
-  "BUCKET": "bucket",
+  "REGION": "us-west-2",
+  "BUCKET": "davidwilcox-sample-pages",
   "MAX_AGE": "10",
-  "DDB_TABLE": "LambdAuthUsers",
+  "DDB_TABLE": "schedulemychild-users",
   "IDENTITY_POOL_NAME": "LambdAuth",
-  "DEVELOPER_PROVIDER_NAME": "login.mycompany.myapp",
-  "EXTERNAL_NAME": "My Authentication",
-  "EMAIL_SOURCE": "email@example.com",
-  "VERIFICATION_PAGE": "http://bucket.s3.amazonaws.com/verify.html",
-  "RESET_PAGE": "http://bucket.s3.amazonaws.com/reset.html"
+  "DEVELOPER_PROVIDER_NAME": "login.schedulemyschild.com",
+  "EXTERNAL_NAME": "ScheduleMyChild",
+  "EMAIL_SOURCE": "register@schedulemychild.com",
+  "VERIFICATION_PAGE": "https://www.schedulemychild.com/verifyemail.html",
+  "RESET_PAGE": "https://www.schedulemychid.com/resetpassword.html",
+  "IDENTITY_POOL_ID": "us-west-2:ebab6701-56c6-4e95-aa29-74613b18435e"
 }
