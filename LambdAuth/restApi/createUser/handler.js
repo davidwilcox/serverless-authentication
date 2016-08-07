@@ -6,7 +6,7 @@ console.log('Loading function');
 var AWS = require('aws-sdk');
 var crypto = require('crypto');
 var util = require('util');
-var config = require('../config.json');
+var config = require('./config.json');
 
 // Get reference to AWS clients
 var dynamodb = new AWS.DynamoDB();
@@ -67,7 +67,7 @@ function storeUser(email, password, salt, fn) {
 
 function sendVerificationEmail(email, token, fn) {
 	var subject = 'Verification Email for ' + config.EXTERNAL_NAME;
-	var verificationLink = config.VERIFICATION_PAGE + '?email=' + encodeURIComponent(email) + '&verify=' + token;
+    var verificationLink = config.VERIFICATION_PAGE + '?email=' + encodeURIComponent(email) + '&verify=' + token;
 	ses.sendEmail({
 		Source: config.EMAIL_SOURCE,
 		Destination: {
